@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+    table.table-bordered {
+        border: 1px;
+        border-color:solid #D9EDF7 ;
+    }
+
+
+    table.table-bordered>tbody>tr {
+        border: 1px solid #D9EDF7;
+    }
+   
+    tr:nth-child(even) {
+        background-color: #FCF8E3;
+    }
+</style>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+                <label class="control-label col-sm-2">Company code</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="comp-code">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2">Company name</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="comp-name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn  " style="background-color: #3097D1;">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="container" style="padding-bottom: 20px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="background-color: #2AB27B;">Add</button>
+            <button type="submit" class="btn btn-primary" style="background-color: #2AB27B;">Import</button>
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle btn-primary" style="background-color: #8EB4CB;"
+                    data-toggle="dropdown">
+                    Export <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+            <table class="table table-bordered " >
+                
+                    <tr>
+                        <td>
+                            <h4 class="card-title">List all company using services</h4>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <div class="card-body">
+                                <table class="table table-bordered  ">
+                                    <thead>
+                                        <tr class="info">
+                                            <th>No</th>
+                                            <th>Code</th>
+                                            <th>Name</th>
+                                            <th>Address</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>BFG</td>
+                                            <td class="text-primary">Daugherty.Pouros and Rempel</td>
+                                            <td>934 Boyle Squares East Felton. NJ 46779</td>
+                                            <td class="text-primary">414-223-2695</td>
+                                            <td class="text-primary">betsy40@hudson.com</td>
+                                            <td>Dormouse: 'not in that case I can say.' This was white out of the Muck
+                                                Turtle. 'No no! The advantures first.' said the Duck,'it's generally a
+                                                frog or a serpent?' 'It matters a good deal to come.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>oDW</td>
+                                            <td class="text-primary">Zieme-Quitzon</td>
+                                            <td>2093 Milan Court Suite 102 Schummfort. MO 45874-6389</td>
+                                            <td class="text-primary">383-696-4757 x3150</td>
+                                            <td class="text-primary">taurean.mueller@wilderman.info</td>
+                                            <td>So she set to work and very soon found out that she wanted much to know.
+                                                but the cook took the cauldeon of the soup off the mushroom and crawled
+                                                away in the grass merely remarking that a moment's.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>TIX</td>
+                                            <td class="text-primary">Schuppe and Sons</td>
+                                            <td>959 Mills Landing Wlatertown. OR 93801-2269</td>
+                                            <td class="text-primary">*1-720-302-8425</td>
+                                            <td class="text-primary">brando.welch@ebert.com</td>
+                                            <td>Dormouse. not choosing to notice this question. but hurriedky went in.
+                                                spreading out the words:' Where's the other bit. Her chin was pressed so
+                                                closely against her foot. that there was nothing so. </td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>72C</td>
+                                            <td class="text-primary">Will-Spencer</td>
+                                            <td>5962 Adams Vista Apt. 141 Ornview. ME 17886-8786</td>
+                                            <td class="text-primary">610-485-3856</td>
+                                            <td class="text-primary">solson@sollier.info</td>
+                                            <td>These were the verses to himself."WE KNOW IT TO BE TRUE--" that's the
+                                                queerest thing about it.' 'She's in prison.' the Queen said to herself.
+                                                as well as i get SOMEWHERE.'Alice added as an.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Z3P</td>
+                                            <td class="text-primary">Gerlach Ltd</td>
+                                            <td>13780 Rohan Mount Apt. 157 Laurenceside. CT 44849-5138</td>
+                                            <td class="text-primary">*1-750-615-1753</td>
+                                            <td class="text-primary">robert36@kling.net</td>
+                                            <td>The Queen's argument was. that if something wasn't done about it just
+                                                grazed his node. and broke off a bit afraid of it. She stretched herself
+                                                up closer to Alice's side as she leant against a.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>2QN</td>
+                                            <td class="text-primary">Rodriguez-Stroman</td>
+                                            <td>926 Schumm Fords Suite 895 Siennashire. TX 16034</td>
+                                            <td class="text-primary">464-454-0422</td>
+                                            <td class="text-primary">vallie.connelly@ernser.com</td>
+                                            <td>Mouse with an important air. 'are you all ready? This is the capital of
+                                                Paris. and Paris is the same thing as a lark.And will contemptuous tones
+                                                of her little sister's dream. The long grass.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Ao8</td>
+                                            <td class="text-primary">Barrows-Crona</td>
+                                            <td>2178 Blick Forges Apt. 797 Toyshire. CO 77337</td>
+                                            <td class="text-primary">452.964.0464</td>
+                                            <td class="text-primary">antonia57@altenwerth.biz</td>
+                                            <td>YOUR business. TWO!' said Seven. ' Yes. it IS his business!' said Five.
+                                                'and I'll tell you his history.' As they walked off together.Alice was
+                                                just going to give the prizes?' quite a chorus of.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>XJK</td>
+                                            <td class="text-primary">Haag-Farrell</td>
+                                            <td>7035 Connelly Crossroad Johannashire. KY 04947</td>
+                                            <td class="text-primary">(910) 597-1271 x06424</td>
+                                            <td class="text-primary">gsauer@mante.com</td>
+                                            <td>Let me see: four times seven is--oh dear! I wish you were all shaped
+                                                like ears and whiskers. how late it's getting!' She was a good deal
+                                                until she made some tarts. All on crimson velvet cushion:.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>N95</td>
+                                            <td class="text-primary">Nikolaus PLC</td>
+                                            <td>65089 Swift Locks Vincentburgh. VA 05147- 7130</td>
+                                            <td class="text-primary">341-470-9057 x57525</td>
+                                            <td class="text-primary">graham.kennedy@glover.com</td>
+                                            <td>Bill! the master says you're to go from here?' 'That depends a good many
+                                                little girls eat eggs quite as safe to stay in here any longer!' She
+                                                waited for a little more conversation with her head was.'
+                                            </td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>XD9</td>
+                                            <td class="text-primary">Dare-Schuppe</td>
+                                            <td>8606 Mach Pines Shaneville. HI 14909</td>
+                                            <td class="text-primary">*1-489-299-0602</td>
+                                            <td class="text-primary">qreynolds@dare.info</td>
+                                            <td>Dodo. a Lory and an old conger-eel. that used to say than his first
+                                                remark. 'It was a paper label. with the lobsters. out to the end: then
+                                                stop.' These were the tow creates got so much.</td>
+                                            <td>
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </td>
+                                        </tr>
+
+                                </table>
+
+
+                            </div>
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-double-left"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-double-right"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                
+            </table>
+    <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">DATABANK | FrontMaster | Create new company detail</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Code</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-code">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Name</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Address</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-address">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Phone</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Email</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Description</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" id="comp-description">
+                    </div>
+                </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>    
+
+    </div>
+
+
+</body>
+
+</html>
